@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ZodiacSign {
+  name: String!
+  startDay: Int!
+  startMonth: Int!
+  endDay: Int!
+  endMonth: Int!
+}
+
+type Query {
+  zodiacSigns: [ZodiacSign!]!
+  zodiacSignByDate(day: Int!, month: Int!): ZodiacSign
+}
